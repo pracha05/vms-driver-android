@@ -101,7 +101,7 @@
                 android:layout_height="@dimen/allbuttonheight"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/button_round_cornor_selector"
+                android:background="@drawable/button_disable_backgroung"
                 android:enabled="false"
                 android:text="Sign in"
                 android:textAllCaps="false"

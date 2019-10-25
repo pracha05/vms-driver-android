@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.vms.driver.R;
+import com.vms.driver.intent.IntentFactory;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,6 +54,11 @@ public class SignInActivity extends BaseActivity {
     @Override
     public void onClick(View v) {
         super.onClick(v);
+            switch(v.getId()){
 
+                case R.id.btn_driver_signin:
+                    startActivity(IntentFactory.returnDashBoardActivity(SignInActivity.this));
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
     }
 }
