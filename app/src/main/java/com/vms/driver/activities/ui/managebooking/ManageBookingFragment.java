@@ -1,4 +1,4 @@
-package com.vms.driver.activities.ui.tools;
+package com.vms.driver.activities.ui.managebooking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,18 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.vms.driver.R;
 
+public class ManageBookingFragment extends Fragment {
 
-public class ToolsFragment extends Fragment {
-
-    private ToolsViewModel toolsViewModel;
+    private ManageBookingViewModel manageBookingViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tools, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        manageBookingViewModel =
+                ViewModelProviders.of(this).get(ManageBookingViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_send, container, false);
+        final TextView textView = root.findViewById(R.id.text_send);
+        manageBookingViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

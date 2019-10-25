@@ -1,14 +1,14 @@
-package com.vms.driver.activities.ui.gallery;
+package com.vms.driver.activities.ui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ProfileFragmentViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ProfileFragmentViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }

@@ -1,4 +1,4 @@
-package com.vms.driver.activities.ui.home;
+package com.vms.driver.activities.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,18 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.vms.driver.R;
 
-public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+public class ProfileFragment extends Fragment {
+
+    private ProfileFragmentViewModel profileFragmentViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        profileFragmentViewModel =
+                ViewModelProviders.of(this).get(ProfileFragmentViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        final TextView textView = root.findViewById(R.id.text_gallery);
+        profileFragmentViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

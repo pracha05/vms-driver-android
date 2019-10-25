@@ -3,41 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_profile">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.vms.driver.activities.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:id="@+id/nav_profile"
+        android:name="com.vms.driver.activities.ui.assignbooking.AssignBookingFragment"
+        android:label="@string/menu_profile"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.vms.driver.activities.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:id="@+id/nav_assign_booking"
+        android:name="com.vms.driver.activities.ui.profile.ProfileFragment"
+        android:label="@string/menu_assign_booking"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.vms.driver.activities.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:id="@+id/nav_manage_booking"
+        android:name="com.vms.driver.activities.ui.accounting.AccountingFragment"
+        android:label="@string/menu_manage_booking"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.vms.driver.activities.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:id="@+id/nav_incentives"
+        android:name="com.vms.driver.activities.ui.jobfinder.JobFinderFragment"
+        android:label="@string/menu_incentive"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.vms.driver.activities.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:id="@+id/nav_accounting"
+        android:name="com.vms.driver.activities.ui.incentive.IncentiveFragment"
+        android:label="@string/menu_accounting"
         tools:layout="@layout/fragment_share" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.vms.driver.activities.ui.send.SendFragment"
-        android:label="@string/menu_send"
+        android:id="@+id/nav_job_finder"
+        android:name="com.vms.driver.activities.ui.managebooking.ManageBookingFragment"
+        android:label="@string/menu_rate"
         tools:layout="@layout/fragment_send" />
 </navigation>

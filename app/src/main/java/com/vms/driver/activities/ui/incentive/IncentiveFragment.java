@@ -1,4 +1,4 @@
-package com.vms.driver.activities.ui.gallery;
+package com.vms.driver.activities.ui.incentive;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,17 +15,17 @@ import androidx.lifecycle.ViewModelProviders;
 import com.vms.driver.R;
 
 
-public class GalleryFragment extends Fragment {
+public class IncentiveFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private IncentiveFragmentViewModel incentiveFragmentViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
+        incentiveFragmentViewModel =
+                ViewModelProviders.of(this).get(IncentiveFragmentViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_share, container, false);
+        final TextView textView = root.findViewById(R.id.text_share);
+        incentiveFragmentViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

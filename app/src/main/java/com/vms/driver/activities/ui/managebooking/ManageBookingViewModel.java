@@ -1,16 +1,16 @@
-package com.vms.driver.activities.ui.home;
+package com.vms.driver.activities.ui.managebooking;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ManageBookingViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ManageBookingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is send fragment");
     }
 
     public LiveData<String> getText() {

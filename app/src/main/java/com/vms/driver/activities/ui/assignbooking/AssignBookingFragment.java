@@ -1,4 +1,4 @@
-package com.vms.driver.activities.ui.send;
+package com.vms.driver.activities.ui.assignbooking;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.vms.driver.R;
 
-public class SendFragment extends Fragment {
+public class AssignBookingFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private AssignBookingViewModel assignBookingViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        assignBookingViewModel =
+                ViewModelProviders.of(this).get(AssignBookingViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        final TextView textView = root.findViewById(R.id.text_home);
+        assignBookingViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

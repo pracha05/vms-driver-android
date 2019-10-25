@@ -1,16 +1,16 @@
-package com.vms.driver.activities.ui.tools;
+package com.vms.driver.activities.ui.incentive;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ToolsViewModel extends ViewModel {
+public class IncentiveFragmentViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ToolsViewModel() {
+    public IncentiveFragmentViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is tools fragment");
+        mText.setValue("This is share fragment");
     }
 
     public LiveData<String> getText() {
