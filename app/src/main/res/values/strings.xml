@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VmsDriver</string>
+    <string name="app_name">FLO Partner</string>
     <string name="RobotoBold">Appfont/Avenir_Heavy.ttf</string>
     <string name="RobotoRegular">Appfont/Avenir_Book.ttf</string>
     <string name="title_activity_dash_board">DashBoardActivity</string>
@@ -23,4 +23,8 @@
     <string name="menu_refer">Refer &amp; Earn</string>
     <string name="menu_about_us">About Us</string>
     <string name="menu_logout">Logout</string>
+    <string name="hints_mobile">Enter mobile number</string>
+    <string name="mobile_number_error_mesage">Enter valid mobile number !</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
 </resources>

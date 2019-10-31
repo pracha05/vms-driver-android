@@ -7,42 +7,46 @@
     android:background="@color/colorWhite"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space10"
+        android:src="@drawable/ic_foliyoo_partner" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="@dimen/space40"
+        android:layout_marginRight="@dimen/space40"
+        android:layout_marginBottom="@dimen/space10"
+        android:gravity="center"
+        android:text="Let's check if you are already registered with us"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="16sp" />
+
     <RelativeLayout
+        android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/boxborder_shape"
         android:orientation="vertical"
+        android:layout_below="@+id/login_title"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
         <LinearLayout
+            android:id="@+id/content_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/login_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:text="Sign In"
-                android:textColor="@color/colorBlack"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_forgotpwd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:text="Forgot Password?"
-                android:textColor="@color/colorBlack"
-                android:visibility="visible" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -54,6 +58,8 @@
                     android:layout_height="wrap_content"
                     android:hint="Mobile No."
                     android:inputType="number"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
                     android:maxLength="10"
                     android:singleLine="true"
                     android:textColor="@color/colorBlack" />
@@ -69,6 +75,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:hint="Password"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
                     android:inputType="textPassword"
                     android:singleLine="true"
                     android:textColor="@color/colorBlack" />
@@ -84,6 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="I agree to"
+                    android:layout_marginBottom="@dimen/margin10dp"
                     android:textSize="14sp" />
 
                 <TextView
@@ -92,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text=" Terms and Conditions / Policy"
                     android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginBottom="@dimen/margin10dp"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -107,7 +117,26 @@
                 android:textAllCaps="false"
                 android:textColor="@color/colorLightDarkGray"
                 android:textSize="15sp" />
-        </LinearLayout>
 
+            <TextView
+                android:id="@+id/tv_forgotpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Forgot Password?"
+                android:textColor="@color/colorBlack"
+                android:visibility="visible" />
+        </LinearLayout>
     </RelativeLayout>
+<!--    <TextView-->
+<!--        android:layout_below="@+id/main_content"-->
+<!--        android:id="@+id/terms"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/space20"-->
+<!--        android:gravity="center"-->
+<!--        android:text="By continuing, I agree to Foliyoo's Terms and Conditions"-->
+<!--        android:textColor="@color/colorLightBlack"-->
+<!--        android:textSize="16sp" />-->
 </RelativeLayout>

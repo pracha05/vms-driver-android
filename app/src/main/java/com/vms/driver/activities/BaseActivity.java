@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+import com.vms.driver.utils.NetworkConnection;
 
 import com.vms.driver.R;
-import com.vms.driver.utils.NetworkConnection;
 
 public class BaseActivity extends AppCompatActivity implements View.OnClickListener {
 

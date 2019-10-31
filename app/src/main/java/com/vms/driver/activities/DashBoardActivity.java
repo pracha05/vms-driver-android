@@ -38,7 +38,7 @@ public class DashBoardActivity extends BaseActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_profile, R.id.nav_assign_booking, R.id.nav_manage_booking,
-                R.id.nav_incentives, R.id.nav_accounting, R.id.nav_send)
+                R.id.nav_incentives, R.id.nav_accounting, R.id.nav_rating)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
