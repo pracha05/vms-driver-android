@@ -10,7 +10,7 @@ public class AccountingFragmentModel extends ViewModel {
 
     public AccountingFragmentModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is accounting fragment");
     }
 
     public LiveData<String> getText() {

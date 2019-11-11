@@ -27,4 +27,15 @@
     <string name="mobile_number_error_mesage">Enter valid mobile number !</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="btn_submit">Submit</string>
+    <string name="about_us_title">About Us</string>
+    <string name="edu_video_title">Educational Video</string>
+    <string name="we_have_a_gift_for_you_refer_your_friend_and_earn_a_10_discount_voucher_your_refernce_code_is_v52gs1">We have a gift for you! Refer your friend and earn a 10% discount voucher. Your refernce code is v52gs1</string>
+    <string name="reference_code">Reference Code</string>
+    <string name="about_us_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat vestibulum eros, vitae placerat libero vestibulum vel. Quisque eu nisl ut lacus dictum dignissim. Cras eu nisl faucibus, sollicitudin lorem ac, consectetur diam. Sed dolor nulla, ornare a maximus sit amet, gravida vitae velit. Integer non libero et nisl scelerisque convallis ut vel leo. Nunc tortor felis, congue sit amet suscipit ut, fermentum id libero. Morbi luctus ornare augue, tempus tempus quam ultricies ut. Curabitur sem erat, maximus id lacinia at, vehicula eu nisi. Vivamus commodo sodales nisl. Praesent magna nulla, euismod sed porta id, gravida non magna. In hac habitasse platea dictumst. In scelerisque lorem sapien, vel tempus erat mattis sed. Vestibulum commodo nisl eu nisi rutrum, dictum efficitur lectus ultricies. Vestibulum ut urna libero. Sed egestas nibh at dui dapibus fermentum ut sagittis metus. Curabitur suscipit libero cursus varius euismod.
+    </string>
+    <string name="enter_phone">Please enter your registered mobile number</string>
+    <string name="enter_phone_subtext">We will send a verification code to your registered mobile number.</string>
+    <string name="support">Support</string>
+    <string name="enter_phone_number">Enter phone number</string>
 </resources>

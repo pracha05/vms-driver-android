@@ -10,7 +10,7 @@ public class AssignBookingViewModel extends ViewModel {
 
     public AssignBookingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is Assign booking fragment");
     }
 
     public LiveData<String> getText() {

@@ -10,7 +10,7 @@ public class JobFinderViewModel extends ViewModel {
 
     public JobFinderViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is tools fragment");
+        mText.setValue("This is job finder fragment");
     }
 
     public LiveData<String> getText() {

@@ -7,37 +7,37 @@
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.vms.driver.activities.ui.assignbooking.AssignBookingFragment"
+        android:name="com.vms.driver.activities.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_assign_booking"
-        android:name="com.vms.driver.activities.ui.profile.ProfileFragment"
+        android:name="com.vms.driver.activities.ui.assignbooking.AssignBookingFragment"
         android:label="@string/menu_assign_booking"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_manage_booking"
-        android:name="com.vms.driver.activities.ui.accounting.AccountingFragment"
+        android:name="com.vms.driver.activities.ui.managebooking.ManageBookingFragment"
         android:label="@string/menu_manage_booking"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_incentives"
-        android:name="com.vms.driver.activities.ui.jobfinder.JobFinderFragment"
+        android:name="com.vms.driver.activities.ui.incentive.IncentiveFragment"
         android:label="@string/menu_incentive"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
         android:id="@+id/nav_accounting"
-        android:name="com.vms.driver.activities.ui.incentive.IncentiveFragment"
+        android:name="com.vms.driver.activities.ui.accounting.AccountingFragment"
         android:label="@string/menu_accounting"
         tools:layout="@layout/fragment_share" />
 
     <fragment
         android:id="@+id/nav_job_finder"
-        android:name="com.vms.driver.activities.ui.managebooking.ManageBookingFragment"
+        android:name="com.vms.driver.activities.ui.jobfinder.JobFinderFragment"
         android:label="@string/menu_rate"
         tools:layout="@layout/fragment_send" />
 </navigation>

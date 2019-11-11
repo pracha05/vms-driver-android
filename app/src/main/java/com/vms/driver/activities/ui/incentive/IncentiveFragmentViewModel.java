@@ -10,7 +10,7 @@ public class IncentiveFragmentViewModel extends ViewModel {
 
     public IncentiveFragmentViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is incentive fragment");
     }
 
     public LiveData<String> getText() {

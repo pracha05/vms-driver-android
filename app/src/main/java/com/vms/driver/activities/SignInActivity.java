@@ -82,7 +82,7 @@ public class SignInActivity extends BaseActivity {
         android.app.AlertDialog.Builder alertDialogBuilder = new android.app.AlertDialog.Builder(SignInActivity.this);
         alertDialogBuilder.setView(promptView);
         alertDialogBuilder.setTitle(" ");
-        final EditText email = (EditText) promptView.findViewById(R.id.input_email);
+        final EditText email = (EditText) promptView.findViewById(R.id.input_phone);
         alertDialogBuilder.setCancelable(true)
                 .setNegativeButton(getString(R.string.dialog_cancel), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
