@@ -2,10 +2,12 @@ package com.vms.driver.intent;
 
 import android.content.Context;
 import android.content.Intent;
+import android.provider.ContactsContract;
 
 import com.vms.driver.activities.AboutUsActivity;
 import com.vms.driver.activities.DashBoardActivity;
 import com.vms.driver.activities.EducationalVideoActivity;
+import com.vms.driver.activities.ProfileActivity;
 import com.vms.driver.activities.ReferenceCodeActivity;
 import com.vms.driver.activities.SignInActivity;
 import com.vms.driver.activities.SupportActivity;
@@ -58,6 +60,15 @@ public class IntentFactory {
      */
     public static Intent createReferenceCodeActivity(Context context) {
         Intent intent = new Intent(context, ReferenceCodeActivity.class);
+        return intent;
+    }
+
+
+    /**
+     * create profile activity
+     */
+    public static Intent createProfileActivity(Context context) {
+        Intent intent = new Intent(context, ProfileActivity.class);
         return intent;
     }
 

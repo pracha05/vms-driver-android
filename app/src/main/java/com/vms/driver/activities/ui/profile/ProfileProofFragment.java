@@ -7,25 +7,24 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.vms.driver.R;
 
+public class ProfileProofFragment extends Fragment {
 
-public class ProfileFragment extends Fragment {
+    private ProfileProofFragmentViewModel profileProofFragmentViewModel;
 
-    private ProfileFragmentViewModel profileFragmentViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        profileFragmentViewModel =
-                ViewModelProviders.of(this).get(ProfileFragmentViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        profileProofFragmentViewModel =
+                ViewModelProviders.of(this).get(ProfileProofFragmentViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_profile_proof, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
-        profileFragmentViewModel.getText().observe(this, new Observer<String>() {
+        profileProofFragmentViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

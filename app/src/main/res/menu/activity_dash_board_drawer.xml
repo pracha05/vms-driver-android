@@ -23,9 +23,9 @@
     <item
         android:id="@+id/nav_rating"
         android:title="@string/menu_rate" />
-<!--    <item-->
-<!--        android:id="@+id/nav_third_party"-->
-<!--        android:title="@string/menu_third_party" />-->
+    <item
+        android:id="@+id/nav_third_party"
+        android:title="@string/menu_third_party" />
     <item
         android:id="@+id/nav_job_finder"
         android:title="@string/menu_job_finder" />

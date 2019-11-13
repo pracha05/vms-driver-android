@@ -60,6 +60,8 @@ public class DashBoardActivity extends BaseActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
         this.switch_onoff.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -73,6 +75,7 @@ public class DashBoardActivity extends BaseActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
                 if(menuItem.getTitle().equals("Logout")){
                     Intent intent = new Intent(DashBoardActivity.this, SignInActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK
@@ -97,9 +100,10 @@ public class DashBoardActivity extends BaseActivity {
                 else if(menuItem.getTitle().equals("Refer & Earn")){
                     startActivity(IntentFactory.createReferenceCodeActivity(DashBoardActivity.this));
                     overridePendingTransition(R.anim.slide_in_from_right, R.anim.fade_out);
+                }else if(menuItem.getTitle().equals("Profile")){
+                    startActivity(IntentFactory.createProfileActivity(DashBoardActivity.this));
+                    overridePendingTransition(R.anim.slide_in_from_right, R.anim.fade_out);
                 }
-
-
 
                 return false;
             }

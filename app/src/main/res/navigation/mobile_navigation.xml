@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.vms.driver.activities.ui.profile.ProfileFragment"
+        android:name="com.vms.driver.activities.ui.profile.ProfileBasicDetailsFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_home" />
 
@@ -15,7 +15,7 @@
         android:id="@+id/nav_assign_booking"
         android:name="com.vms.driver.activities.ui.assignbooking.AssignBookingFragment"
         android:label="@string/menu_assign_booking"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_profile_basic_details" />
 
     <fragment
         android:id="@+id/nav_manage_booking"
